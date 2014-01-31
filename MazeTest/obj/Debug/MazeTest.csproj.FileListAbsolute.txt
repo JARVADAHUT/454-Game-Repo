@@ -6,9 +6,3 @@ C:\Users\Bruce\Documents\Visual Studio 2012\Projects\MazeTest (2)\MazeTest\MazeT
 C:\Users\Bruce\Documents\Visual Studio 2012\Projects\MazeTest (2)\MazeTest\MazeTest\bin\Debug\MazeTest.pdb
 C:\Users\Bruce\Documents\Visual Studio 2012\Projects\MazeTest (2)\MazeTest\MazeTest\obj\Debug\MazeTest.exe
 C:\Users\Bruce\Documents\Visual Studio 2012\Projects\MazeTest (2)\MazeTest\MazeTest\obj\Debug\MazeTest.pdb
-C:\Users\mcandertoad\Dropbox\CSCD454\Current Maze Code\MazeTest (2)\MazeTest\MazeTest\bin\Debug\MazeTest.exe.config
-C:\Users\mcandertoad\Dropbox\CSCD454\Current Maze Code\MazeTest (2)\MazeTest\MazeTest\obj\Debug\MazeTest.exe
-C:\Users\mcandertoad\Dropbox\CSCD454\Current Maze Code\MazeTest (2)\MazeTest\MazeTest\obj\Debug\MazeTest.pdb
-C:\Users\mcandertoad\Dropbox\CSCD454\Current Maze Code\MazeTest (2)\MazeTest\MazeTest\bin\Debug\MazeTest.exe
-C:\Users\mcandertoad\Dropbox\CSCD454\Current Maze Code\MazeTest (2)\MazeTest\MazeTest\bin\Debug\MazeTest.pdb
-C:\Users\mcandertoad\Dropbox\CSCD454\Current Maze Code\MazeTest (2)\MazeTest\MazeTest\obj\Debug\MazeTest.csprojResolveAssemblyReference.cache

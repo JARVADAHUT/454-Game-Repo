@@ -10,14 +10,11 @@ namespace MazeTest
     class DefaultMazeGenerator : IMazeGenerator
     {
         private readonly int minSize = 10;
-        private MazeNodeObject _head; // top left most block
+        private MazeObject _head; // top left most block
         
         public DefaultMazeGenerator()
         {
-            
-                    
-            //generate();
-            //SetDiscovered();
+
         }
 /*
         private void SetDiscovered()
@@ -147,7 +144,7 @@ namespace MazeTest
 */
         #region MazeGeration
 
-        public MazeNodeObject generate(int size)
+        public MazeObject generate(int size)
         {
             if (size < minSize)
                 return null;
@@ -281,13 +278,13 @@ namespace MazeTest
 
         }
 
-        private MazeNodeObject arrayToGraph(int[][] maze)
+        private MazeObject arrayToGraph(int[][] maze)
         {
-            _head = new MazeNodeObject(new MazeObjectWall());
+            _head = new MazeObjectWall();
 
             for(int r = 0; r < maze.Length; r++)
             {
-                MazeNodeObject temp = _head;
+                MazeObject temp = _head;
                 for(int z = 0; z < r; z++)
                 {
                     temp = temp.getSurroundings().getDown();
@@ -300,7 +297,7 @@ namespace MazeTest
                         int up = maze[r - 1][c];
                         if (temp.getSurroundings().getUp() == null)
                         {
-                            temp.getSurroundings().setUp(new MazeNodeObject(MazeObjectFactory.getMazeObject(up)));
+                            temp.getSurroundings().setUp( FMazeObjectFactory.getMazeObject(up) );
                             temp.getSurroundings().getUp().getSurroundings().setDown(temp);
                         }
                     }
@@ -309,7 +306,7 @@ namespace MazeTest
                         int left = maze[r][c - 1];
                         if (temp.getSurroundings().getLeft() == null)
                         {
-                            temp.getSurroundings().setLeft(new MazeNodeObject(MazeObjectFactory.getMazeObject(left)));
+                            temp.getSurroundings().setLeft( FMazeObjectFactory.getMazeObject(left) );
                             temp.getSurroundings().getLeft().getSurroundings().setRight(temp);
                         }
                     }
@@ -318,13 +315,13 @@ namespace MazeTest
                         int down = maze[r + 1][c];
                         if (temp.getSurroundings().getDown() == null)
                         {
-                            temp.getSurroundings().setDown(new MazeNodeObject(MazeObjectFactory.getMazeObject(down)));
+                            temp.getSurroundings().setDown( FMazeObjectFactory.getMazeObject(down) );
                             temp.getSurroundings().getDown().getSurroundings().setUp(temp);
 
                             if (c > 0)
                             {
-                                MazeNodeObject downBelow = temp.getSurroundings().getDown();
-                                MazeNodeObject downLeft = temp.getSurroundings().getLeft().getSurroundings().getDown();
+                                MazeObject downBelow = temp.getSurroundings().getDown();
+                                MazeObject downLeft = temp.getSurroundings().getLeft().getSurroundings().getDown();
 
                                 downBelow.getSurroundings().setLeft(downLeft);
                                 downLeft.getSurroundings().setRight(downBelow);
@@ -338,7 +335,7 @@ namespace MazeTest
                         int right = maze[r][c + 1];
                         if (temp.getSurroundings().getRight() == null)
                         {
-                            temp.getSurroundings().setRight(new MazeNodeObject(MazeObjectFactory.getMazeObject(right)));
+                            temp.getSurroundings().setRight( FMazeObjectFactory.getMazeObject(right) );
                             temp.getSurroundings().getRight().getSurroundings().setLeft(temp);
                         }
                     }
@@ -350,7 +347,7 @@ namespace MazeTest
 
             
 
-            Player.getInstance().setPosition( _head.getSurroundings().getDown().getSurroundings().getRight() );
+            //Player.getInstance().setPosition( _head.getSurroundings().getDown().getSurroundings().getRight() );
 
 
             return _head;

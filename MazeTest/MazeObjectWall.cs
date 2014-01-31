@@ -13,14 +13,9 @@ namespace MazeTest
 
         }
 
-        public override void die()
+        public override void interact(LivingCreature creature)
         {
-            throw new NotImplementedException();
-        }
-
-        public override bool interact()
-        {
-            return false;
+            //do nothing, you are a wall
         }
 
         public override string ToString()

@@ -44,7 +44,7 @@
     <Compile Include="Enumerations.cs" />
     <Compile Include="DefaultMazeDisplay.cs" />
     <Compile Include="DefaultMazeGenerator.cs" />
-    <Compile Include="MazeNodeObject.cs" />
+    <Compile Include="MazeMover.cs" />
     <Compile Include="MazeObjectChest.cs" />
     <Compile Include="MazeObjectExit.cs" />
     <Compile Include="LivingCreature.cs" />
@@ -53,7 +53,7 @@
     <Compile Include="IMazeGenerator.cs" />
     <Compile Include="MazeObject.cs" />
     <Compile Include="MazeObjectAir.cs" />
-    <Compile Include="MazeObjectFactory.cs" />
+    <Compile Include="FMazeObjectFactory.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

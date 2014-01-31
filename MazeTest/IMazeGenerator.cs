@@ -9,6 +9,6 @@ namespace MazeTest
 {
     interface IMazeGenerator
     {
-        MazeNodeObject generate(int size);
+        MazeObject generate(int size);
     }
 }

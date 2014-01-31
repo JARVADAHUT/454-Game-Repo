@@ -17,7 +17,7 @@ namespace MazeTest
             Maze maze = Maze.getInstance();
             maze.setGenerator(new DefaultMazeGenerator());
             maze.setDiplayer(new DefaultMazeDisplay());
-            maze.generate(20);
+            maze.generate(50);
 
             maze.Display();
 
@@ -42,7 +42,8 @@ namespace MazeTest
                         break;
                 }
 
-                Console.WriteLine("\n\n\n\n\n\n\n\n\n\n");
+                Console.Clear();
+                
                 maze.Display();
 
 

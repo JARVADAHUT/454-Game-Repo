@@ -13,10 +13,10 @@ namespace MazeTest
 
         }
 
-        public void display(MazeNodeObject head)
+        public void display(MazeObject head)
         {
 
-            MazeNodeObject temp = head;
+            MazeObject temp = head;
             int count = 0;
             while(temp.getSurroundings().getDown() != null)//for (int x = 0; x < maze.Length; x++)
             {
@@ -34,7 +34,7 @@ namespace MazeTest
 
                 while(temp != null)
                 {
-                    Console.Write(temp.getObject());
+                    Console.Write(temp);
 
                     temp = temp.getSurroundings().getRight();
                 }

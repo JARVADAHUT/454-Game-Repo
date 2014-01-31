@@ -8,10 +8,10 @@ namespace MazeTest
 {
     class Surroundings
     {
-        private MazeNodeObject _left;
-        private MazeNodeObject _right;
-        private MazeNodeObject _up;
-        private MazeNodeObject _down;
+        private MazeObject _left;
+        private MazeObject _right;
+        private MazeObject _up;
+        private MazeObject _down;
 
 
         public Surroundings()
@@ -25,44 +25,47 @@ namespace MazeTest
 
         //setters-------------------------------
 
-        public void setLeft(MazeNodeObject left)
+
+        public void setLeft(MazeObject left)
         {
             _left = left;
         }
 
-        public void setRight(MazeNodeObject right)
+        public void setRight(MazeObject right)
         {
             _right = right;
         }
 
-        public void setUp(MazeNodeObject up)
+        public void setUp(MazeObject up)
         {
             _up = up;
         }
 
-        public void setDown(MazeNodeObject down)
+        public void setDown(MazeObject down)
         {
             _down = down;
         }
 
+
         //getters-------------------------------
 
-        public MazeNodeObject getLeft()
+
+        public MazeObject getLeft()
         {
             return _left;
         }
 
-        public MazeNodeObject getRight()
+        public MazeObject getRight()
         {
             return _right;
         }
 
-        public MazeNodeObject getUp()
+        public MazeObject getUp()
         {
             return _up;
         }
 
-        public MazeNodeObject getDown()
+        public MazeObject getDown()
         {
             return _down;
         }

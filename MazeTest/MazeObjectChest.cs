@@ -13,18 +13,14 @@ namespace MazeTest
 
         }
 
-        public override void die()
-        {
-
-        }
-
         public override string ToString()
         {
             return "c";
         }
-        public override bool interact()
+
+        public override void interact(LivingCreature creature)
         {
-            return false;
+
         }
     }
 }

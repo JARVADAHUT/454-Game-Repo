@@ -8,6 +8,6 @@ namespace MazeTest
 {
     interface IMazeDisplay
     {
-        void display(MazeNodeObject maze);
+        void display(MazeObject maze);
     }
 }

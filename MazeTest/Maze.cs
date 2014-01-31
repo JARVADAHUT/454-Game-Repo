@@ -13,7 +13,7 @@ namespace MazeTest
         private static Maze _thisMaze = null;
 
         private IMazeDisplay _displayer;
-        private MazeNodeObject _theMaze;
+        private MazeObject _theMaze;
         private IMazeGenerator _mazeGen;
 
 

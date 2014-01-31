@@ -16,13 +16,9 @@ namespace MazeTest
             //_nextLevel = nextLevel;
         }
 
-        public override void die()
+        public override void interact(LivingCreature creature)
         {
-            throw new NotImplementedException();
-        }
-        public override bool interact()
-        {
-            return false;
+
         }
         public override string ToString()
         {

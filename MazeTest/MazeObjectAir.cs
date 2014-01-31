@@ -13,15 +13,18 @@ namespace MazeTest
 
         }
 
-        public override void die()
+        public override void interact(LivingCreature creature)
         {
+            EnumDirection interactDirection = creature.getLastMove();
 
+            int flipDirection = -1 * (int)interactDirection;
+
+            interactDirection = (EnumDirection)flipDirection;
+
+            MazeMover.move(interactDirection, this);
         }
 
-        public override bool interact()
-        {
-            return true;
-        }
+
 
         public override string ToString()
         {
